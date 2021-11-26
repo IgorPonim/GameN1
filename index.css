@@ -30,3 +30,7 @@
     background-color: red;
     transition: .3s linear;
 }
+.result{
+    font-size: 20px;
+    color: red;
+}

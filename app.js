@@ -47,22 +47,25 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'strawb',
             img: 'images/strawb.png'
-        }, {
-            name: 'racoon',
-            img: 'images/racoon.png'
         },
         {
-            name: 'strawb',
-            img: 'images/strawb.png'
+            name: 'cat',
+            img: 'images/cat.png'
         },
         {
-            name: 'strawb',
-            img: 'images/strawb.png'
+            name: 'cat',
+            img: 'images/cat.png'
         },
         {
-            name: 'dog',
-            img: 'images/dog-looking.png'
+            name: 'avocado',
+            img: 'images/avocado.png'
         },
+        {
+            name: 'avocado',
+            img: 'images/avocado.png'
+        },
+
+
     ]
     cardArray.sort(() => 0.7 - Math.random())
     const grid = document.querySelector('.grid')
@@ -70,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let cardsChosenId = []
     let cardsWon = []
     let resultDisplay = document.querySelector('.result')
-    
+
     //creating dom elements
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
@@ -106,19 +109,23 @@ document.addEventListener('DOMContentLoaded', () => {
             cardsWon.push(cardsChosen)
             cards[optionOneId].setAttribute('src', 'images/whites.png')
             cards[optionTwoId].setAttribute('src', 'images/whites.png')
-            alert('Ты нашел совпадение!')
+            
         } else {
             cards[optionOneId].setAttribute('src', 'images/white-king.png')
             cards[optionTwoId].setAttribute('src', 'images/white-king.png')
-            alert('Попробуй еще))')
+
            
         }
+        
         cardsChosen = []
         cardsChosenId = []
         resultDisplay.textContent = cardsWon.length
-      /*  window.location.reload()*/
+        if (cardsWon.length === 8) {
+            alert("Молодец! ты умница!")
+        }
+        /*  window.location.reload()*/
     }
+
+
     
-
-
 })
