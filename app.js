@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId.push(cardId)
         this.setAttribute('src', cardArray[cardId].img)
         if (cardsChosen.length === 2) {
-            setTimeout(checkForMatch, 400)
+            setTimeout(checkForMatch, 700)
         }
     }
 
@@ -111,9 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionTwoId].setAttribute('src', 'images/whites.png')
             
         } else {
+            
             cards[optionOneId].setAttribute('src', 'images/white-king.png')
             cards[optionTwoId].setAttribute('src', 'images/white-king.png')
-
+           
            
         }
         
