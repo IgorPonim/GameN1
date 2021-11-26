@@ -1,0 +1,32 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 400px;
+    border: 1px solid grey;
+   
+
+}
+*{
+    background-color: #2A2C2F;
+    color: gold;
+}
+.Images {
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+.page {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Images:hover{
+    cursor: pointer;
+    background-color: red;
+    transition: .3s linear;
+}
