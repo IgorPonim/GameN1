@@ -123,8 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
         resultDisplay.textContent = cardsWon.length
         if (cardsWon.length === 8) {
             alert("Молодец! ты умница!")
+            window.location.reload()
         }
-        /*  window.location.reload()*/
+        
     }
 
 
